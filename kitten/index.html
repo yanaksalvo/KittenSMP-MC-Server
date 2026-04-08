@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitten SMP | The Coziest Minecraft Server</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image.png" alt="Logo" style="width: 45px; height: 45px; border-radius: 8px; object-fit: cover; border: 2px solid var(--primary);">
+                <div class="logo-text">
+                    <h1>Kitten<span>SMP</span></h1>
+                    <p>COZIEST SMP</p>
+                </div>
+            </div>
+
+            <div class="season-badge">
+                <i class="fa-solid fa-seedling"></i> Season 1 • Blossom
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rules.html">Rules</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="online-status">
+                    <span class="pulse"></span> Online: ...
+                </div>
+                <button class="btn-primary">Join Now!</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-elements">
+            <div class="glow-orb org-1"></div>
+            <div class="glow-orb org-2"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-tag">
+                    <span class="dot"></span> COZY • ZERO TOXICITY • SMP
+                </div>
+
+                <h1 class="hero-title">The <span>sweetest</span><br>Minecraft SMP<br>server</h1>
+
+                <p class="hero-desc">
+                    Join thousands of players in a pink-white, zero-toxicity Kitten SMP experience.
+                    Features a balanced economy, weekly events, protected plots, and the coziest community ever! ✨
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary large"><i class="fa-solid fa-download"></i> Download</button>
+
+                    <div class="ip-box" onclick="copyIP()">
+                        <div class="ip-info">
+                            <span class="label">Server IP:</span>
+                            <span class="ip" id="server-ip">play.kittensmp.com</span>
+                        </div>
+                        <button class="copy-btn"><i class="fa-regular fa-copy"></i> Copy</button>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>2,500+</h3>
+                        <p>UNIQUE PLAYERS</p>
+                    </div>
+                    <div class="stat">
+                        <h3>450+</h3>
+                        <p>DAILY PLAYERS</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1.20.1+</h3>
+                        <p>JAVA EDITION</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-title"><i class="fa-solid fa-globe"></i> play.kittensmp.com</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="video-container">
+                            <!-- VİDEONUN İSMİNİ BURAYA YAZACAKSIN ('trailer.mp4' yerine kendi videonun adını yaz) -->
+                            <video autoplay loop muted playsinline class="hero-video">
+                                <source src="hero-smp.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="mockup-features">
+                            <div class="m-feat">
+                                <h4>No Grief</h4>
+                                <p>Protected claims</p>
+                            </div>
+                            <div class="m-feat">
+                                <h4>Sweet Economy</h4>
+                                <p>Market & Jobs</p>
+                            </div>
+                            <div class="m-feat">
+                                <h4>Community</h4>
+                                <p>Events & Discord</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Info Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h4>WHY KITTEN SMP?</h4>
+                <h2>Fully protected, cozy and balanced</h2>
+                <p>Chill survival, build cute towns, trade in the market and join community events. No drama, no grief,
+                    no toxicity — just comfy Minecraft.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="icon-box"><i class="fa-solid fa-shield-cat"></i></div>
+                    <h3>Anti-Grief Protection</h3>
+                    <p>Claim your land easily with a golden shovel. Your builds are 100% safe from griefers and looters.
+                    </p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="icon-box"><i class="fa-solid fa-coins"></i></div>
+                    <h3>Player Economy</h3>
+                    <p>Set up your own shops, trade with others, and become the richest player on the server.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="icon-box"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Cozy Community</h3>
+                    <p>We enforce strict zero-toxicity rules to keep the chat friendly, wholesome, and welcoming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="script.js"></script>
+    <script>fetch('/track',{method:'GET',keepalive:true}).catch(()=>{});</script>
+</body>
+
+</html>
